@@ -127,8 +127,9 @@ allprojects {
 
 
 dependencies {
+    implementation(project(path = ":api"))
     implementation(project(path = ":core"))
-    SUPPORTED_VERSIONS.forEach { implementation(project(path = ":${it.nmsVersion}", configuration = "reobf")) }
+    // SUPPORTED_VERSIONS.forEach { implementation(project(path = ":${it.nmsVersion}", configuration = "reobf")) }
 }
 
 
